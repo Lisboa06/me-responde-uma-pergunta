@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HMMMMMM</title>
+<head>
+  <style>
+    body {
+        background-color: #000000a4;
+        background-image: linear-gradient(to right, #000000b7, #474747 50%, #000000a5);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .container-pai {
+        background-color: #a02828;
+        background-image: linear-gradient(to bottom, #6f1e1e, #000000b7);
+        padding: 10px;
+        width: 400px;
+        margin-top: 50px;
+        border-radius: 10px;
+        box-shadow: 0px 0px 15px 3px red;
+        animation: neon 2s ease-in-out infinite;
+    }
+    p {
+        color: antiquewhite;
+        font-size: 20px;
+        font-family: sans-serif;
+    }
+    #nao-bnt {
+      position: absolute;
+      margin-left: 50px;
+      background-color: #a02828;
+    }
+    .sim-btn {
+      margin-right: 50px;
+      background-color: #3fa63f;
+    }
+
+    button {
+        padding: 5px;
+        font-weight: bold;
+        font-size: 16px;
+        border-radius: 5px;
+        color: #ffffff;
+        text-shadow: 0px 3px 5px black;
+    }
+    button:hover {
+      -webkit-filter: contrast(2); 
+      filter: contrast(200%);
+    }
+    button:active {
+      -webkit-filter: brightness(2); 
+      filter: brightness(50%);
+    }
+
+    @keyframes neon {
+    0% {
+      box-shadow: 0px 0px 15px 6px red;
+    }
+    50% {
+      box-shadow: 0px 0px 22px 9px red;
+    }
+    100% {
+      box-shadow: 0px 0px 15px 3px red;
+    }
+}
+div > input:invalid {
+    animation: shake 0.2s ease-in-out 0s 2;
+    box-shadow: 0 0 0.6rem #ff0000;
+}
+  </style>
+</head>
+<body>
+    <div class="container-pai">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmILfyEWWwpoMv6hSoDlk1UADzZ338kTZ_YQpX5UW9lWhSY6DjRYyM708_l6cy-QfFTM&usqp=CAU" alt="ricardão">
+        <p>Cuzinho hoje?</p>
+        <button id="nao-bnt" onclick="moverBotao()">Não</button>
+        <a href="https://www.youtube.com/watch?v=2pHbSivi-qE"><button class="sim-btn" onclick="alert('então você é?....')">Sim</button></a>
+    </div>
+    <script>
+    function moverBotao() {
+      var button = document.getElementById("nao-bnt");
+      var newPositionX = Math.floor(Math.random() * window.innerWidth);
+      var newPositionY = Math.floor(Math.random() * window.innerHeight);
+
+      button.style.left = newPositionX + "px";
+      button.style.top = newPositionY + "px";
+    }
+  </script>
+</body>
+</html>
