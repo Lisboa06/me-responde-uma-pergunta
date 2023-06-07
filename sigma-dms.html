@@ -7,6 +7,11 @@
     <link rel="shortcut icon" href="unnamed.webp" type="image/wedp">
     <title>Lá ele kkkkkkkkkkkkkkkkkk</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             background-color: #000000a4;
             background-image: linear-gradient(to right, #000000b7, #474747 50%, #000000a5);
@@ -52,6 +57,47 @@
             box-shadow: 0px 0px 15px 3px red;
             }
         }
+
+        .paragrafo {
+            background-color: #a02828;
+            background-image: linear-gradient(to bottom, #6f1e1e, #000000b7);
+            padding: 10px;
+            margin: -50px auto 0 auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 15px 3px #ff0000b7;
+            color: antiquewhite;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            width: max-content;
+            /* display: ; */
+            /* text-shadow: 0px 0px 5px lightblue; */
+            
+            border: 0.1em solid red;
+        }
+
+        .gradient {
+        background-image: linear-gradient(to bottom, #993333, #b49346, #e0dd40);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        color: antiquewhite;
+        font-weight: bold;
+        animation: gradient-animacao 1s linear infinite;
+        }
+
+        @keyframes gradient-animacao {
+            0% {
+                background-image: linear-gradient(to bottom, #c8a85d, #e0dd40, #993333);
+            }
+            50% {
+                background-image: linear-gradient(to bottom, #e0dd40, #993333,#b49346,);
+            }
+            100% {
+                background-image: linear-gradient(to bottom, #792626,#c39f4b, #dad741);
+                
+            }
+        }
+
+
         .voltar {
             position: absolute;
             top: 5px;
@@ -69,7 +115,9 @@
         <div class="container-pai">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/2pHbSivi-qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
         </div>
-        <p class="paragrafo">Hoje tem kkkkkkkkkkkkkkkkkkk</p>
+        <div class="paragrafo">
+            <p class="gradient">Hoje tem kkkkkkkkkkkkkkkkkkk</p>
+        </div>
     </div>
     <a href="index.html" class="voltar">mudou de idéia?</a>
 </body>
