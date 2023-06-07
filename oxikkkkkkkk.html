@@ -19,18 +19,25 @@
             display: flex;
             justify-content: center;
         }
+        .flex {
+            /* background-color: #a02828; */
+            padding: 0px;
+            border-radius: 10px;
+            width: 100%;
+        }
         .container-pai {
             background-color: #a02828;
             background-image: linear-gradient(to bottom, #6f1e1e, #000000b7);
-            padding: 10px;
+            padding: 8px;
             width: calc(20% + 240px);
-            margin: 100px;
+            margin: 100px auto;
             margin-top: 50px;
             border-radius: 10px;
             box-shadow: 0px 0px 15px 3px red;
             animation: neon 2s ease-in-out infinite;
             display: inline-flex;
-        } 
+        }
+        
         div.video {
             position: relative;
             margin: 10px auto;
@@ -62,15 +69,13 @@
             background-color: #a02828;
             background-image: linear-gradient(to bottom, #6f1e1e, #000000b7);
             padding: 10px;
-            margin: -50px auto 0 auto;
+            margin: -60px auto 0 auto;
             border-radius: 10px;
             box-shadow: 0px 0px 15px 3px #ff0000b7;
             color: antiquewhite;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             width: max-content;
-            /* display: ; */
             /* text-shadow: 0px 0px 5px lightblue; */
-            
             border: 0.1em solid red;
         }
 
@@ -87,13 +92,15 @@
         @keyframes gradient-animacao {
             0% {
                 background-image: linear-gradient(to bottom, #c8a85d, #e0dd40, #993333);
+                /* text-shadow: 0px 0px 5px #c30a0a94; */
             }
             50% {
                 background-image: linear-gradient(to bottom, #e0dd40, #993333,#b49346,);
+                /* text-shadow: 0px 0px 5px #861414b6; */
             }
             100% {
                 background-image: linear-gradient(to bottom, #792626,#c39f4b, #dad741);
-                
+                /* text-shadow: 0px 0px 5px #c9580694; */
             }
         }
 
@@ -111,7 +118,7 @@
     </style>
 </head>
 <body>
-    <div>
+    <div class="flex">
         <div class="container-pai">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/2pHbSivi-qE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay=1; muted; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> 
         </div>
