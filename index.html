@@ -10,7 +10,8 @@
   <style>
     body {
         background-color: #000000a4;
-        background-image: linear-gradient(to right, #000000b7, #474747 50%, #000000a5);
+        background-image: linear-gradient(40deg, #00151b, #03332e, #2b2b2b);
+        background-attachment: fixed;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -51,11 +52,11 @@
         color: #ffffff;
         text-shadow: 0px 3px 5px black;
     }
-    button:hover {
+    button.sim-btn:hover {
       -webkit-filter: contrast(2); 
       filter: contrast(200%);
     }
-    button:active {
+    button.sim-btn:active {
       -webkit-filter: brightness(2); 
       filter: brightness(50%);
     }
@@ -78,9 +79,7 @@
         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpmILfyEWWwpoMv6hSoDlk1UADzZ338kTZ_YQpX5UW9lWhSY6DjRYyM708_l6cy-QfFTM&usqp=CAU" alt="ricardão">
         <p>Cuzinho hoje?</p>
         <button class="sim-btn" onclick="window.location.href = 'oxikkkkkkkk.html';" ondclick="alert('então você é?....')">Sim</button>
-        <button id="nao-bnt" onmouseover="moverBotao()" onmousedown="moverBotao()">Não</button>
-        <!-- <a href="sigma-dms.html"></a></a> -->
-        
+        <button id="nao-bnt" onmouseover="moverBotao()" onmousedown="moverBotao()">Não</button> 
     </div>
 
     <script>
